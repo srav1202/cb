@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SmartBank - Personal Banking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #0a3d62;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url('https://img.freepik.com/free-photo/online-banking-app-smartphone-screen-mobile-payment-digital-banking-financial-technology-concept_640221-178.jpg?w=1380') no-repeat center center/cover;
+      padding: 100px 40px;
+      color: white;
+      text-shadow: 1px 1px 3px #000;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .hero .btn {
+      margin-top: 25px;
+      padding: 12px 30px;
+      background-color: #f1c40f;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      text-align: center;
+      margin: 50px 0 20px;
+      color: #0a3d62;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 40px;
+      background-color: white;
+    }
+
+    .feature-box {
+      background-color: #f9f9f9;
+      padding: 25px;
+      border-radius: 8px;
+      text-align: center;
+      width: 280px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .feature-box h3 {
+      margin-bottom: 10px;
+      color: #0a3d62;
+    }
+
+    .section {
+      background-color: white;
+      margin: 40px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background-color: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero {
+        padding: 60px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">SmartBank</div>
+    <nav>
+      <a href="#accounts">Accounts</a>
+      <a href="#services">Services</a>
+      <a href="#profile">Profile</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Bank Smarter with SmartBank</h1>
+    <p>Open accounts, manage cards & earn up to 7% interest</p>
+    <a href="#accounts" class="btn">Explore Accounts</a>
+  </section>
+
+  <h2 class="section-title">Why Choose Us</h2>
+  <section class="features">
+    <div class="feature-box">
+      <h3>100% Digital</h3>
+      <p>Open and manage your bank account from anywhere, anytime.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Fast Transfers</h3>
+      <p>Send money in seconds with UPI, NEFT, RTGS support.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Secure Login</h3>
+      <p>2FA and biometric authentication keeps your account safe.</p>
+    </div>
+  </section>
+
+  <section class="section" id="accounts">
+    <h2 class="section-title">Accounts</h2>
+    <p>We offer various account types to suit your needs – from zero-balance savings accounts to premium current accounts. Easily access balance, download statements, or apply for new accounts all from your dashboard.</p>
+  </section>
+
+  <section class="section" id="services">
+    <h2 class="section-title">Services</h2>
+    <p>Our wide range of services include fixed deposits, loan applications, credit card offers, mutual fund investments, utility bill payments, and mobile recharges — all in one seamless experience.</p>
+  </section>
+
+  <section class="section" id="profile">
+    <h2 class="section-title">Profile</h2>
+    <p>Keep your profile up-to-date with latest contact details, PAN/Aadhaar information, nominee updates, and secure password changes. Access your entire SmartBank history under one login.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SmartBank. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
